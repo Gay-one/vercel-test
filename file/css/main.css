@@ -1,0 +1,82 @@
+body{
+    box-sizing: border-box;
+    background-color: azure;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.tap_top{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    height: 10%;
+    width: 100%;
+}
+.man-in{
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
+    display: flex;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
+}
+.report{
+    height: 100%;
+    width: 30%;
+    background-color: gray;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 70%;
+}
+.tap_low{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    height: 10%;
+    width: 100%;
+}
+.res{
+    margin: 2%;
+    color: black;
+}
+.button{
+    margin-top: 1%;
+    min-height: 20px;
+    max-height: 40px;
+    background-color: burlywood;
+    color: cornsilk;
+    opacity: 0.7;
+    border-radius: 10%;
+    border-color: bisque;
+}
+.layout-land{
+    background-color: grey;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}
+.onplayer{
+    background-color: blue;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}
+.onenemy{
+    background-color: brown;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+}
+.box_report{
+    margin: 15px;
+}
+.box_report-B{
+    margin-left: 15px;
+}
