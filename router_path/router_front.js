@@ -26,7 +26,7 @@ router.post('/main',(req,res)=>{
         "numbers":"${phone_num}"
     }
     `
-    const Userpath = `./file/userData/${username}.json`
+    const Userpath = `./tmp/${username}.json`
 
     fs.writeFile(Userpath, Userdata, (err) => {
         if (err) {
