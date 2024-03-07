@@ -1,0 +1,64 @@
+.content{
+    background-color: azure;
+    padding: 3%;
+    border-radius: 20%;
+    width: 500px;
+}
+.yack{
+    color: lightskyblue;
+    margin: 3%;
+}
+.element{
+    border-radius: 5px;
+    background-color: lightblue;
+    border: solid 1px lightskyblue;
+    width: 70%;
+}
+.login{
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    color: lightskyblue;
+    border: solid 1px lightseagreen;
+    background-color: azure;
+    width: 30%;
+    height: 15%;
+    border-radius: 15%;
+}
+.login:hover{
+    background-color: lightblue;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05,1.05)
+}
+.login:active{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1,1)
+}
+.content-search{
+    width: 400px;
+    padding: 2%;
+    color: blue;
+    border-radius: 10px;
+    background-color: skyblue;
+}
+.card{
+    color: crimson;
+    margin: 20px;
+    padding: 3px;
+    background-color: aquamarine;
+    width: max-content;
+    opacity: 0.5;
+    transition-duration: 0.25s;
+}
+.card:hover{
+    opacity: 1.0;
+    transition-duration: 0.25s;
+    transform: scale(1,2);
+    cursor: pointer;
+}
+.card:active{
+    opacity: 1.0;
+    transition-duration: 0.1s;
+    transform: scale(1,1);
+}

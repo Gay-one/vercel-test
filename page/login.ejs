@@ -28,8 +28,8 @@
         }
         .content{
             background-color: azure;
-            width: 30%;
-            height: 55%;
+            width: 300px;
+            height: 150px;
             padding: 3%;
             border-radius: 20%;
         }
@@ -37,13 +37,7 @@
             color: lightskyblue;
             margin: 3%;
         }
-        #username{
-            border-radius: 5px;
-            background-color: lightblue;
-            border: solid 1px lightskyblue;
-            width: 50%;
-        }
-        #password{
+        .element{
             border-radius: 5px;
             background-color: lightblue;
             border: solid 1px lightskyblue;
@@ -70,20 +64,27 @@
             transition-timing-function: ease-in-out;
             transform: scale(1,1)
         }
+        form{
+            text-align: center;
+        }
+        input[type="number"]:focus::-webkit-inner-spin-button,
+        input[type="number"]:focus::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="title">Login-Page</div>
     <div class="main">
         <div class="content">
-            <form method="post" action="/">
+            <form method="post" action="/send">
                 <div class="yack"><label for="username">Username:</label></div>
-                <div class="yack"><input type="text" id="username" name="username"></div>
-                <div class="yack"><label for="password">Password:</label></div>
-                <div class="yack"><input type="password" id="password" name="password" maxlength="10"></div>
+                <div class="yack"><input type="text" name="username" class="element" required></div>
+                <div class="yack"><label for="phone_number">Phone Number:</label></div>
+                <div class="yack"><input type="password" minlength="10" maxlength="10" name="phone_number" class="element" required></div>
                 <div class="yack"><input type="submit" value="Login" class="login"></div>
             </form>
-            <a href="subYai"><button id="He">HEE</button></a>
         </div>
     </div>
     <div class="sidebar"></div>
