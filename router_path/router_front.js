@@ -30,7 +30,7 @@ router.post('/main',(req,res)=>{
 
     fs.writeFile(Userpath, Userdata, (err) => {
         if (err) {
-            res.send('OH No....');
+            res.send('OH No....',err);
         } else {
             res.render('music_main.ejs',{username:username})
         }
