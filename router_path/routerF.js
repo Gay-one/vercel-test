@@ -4,7 +4,7 @@ const fs = require('fs')
 const multer = require('multer')
 const path = require('path');
 
-const folderPath = './file/data/';
+const folderPath = './tmp/';
 const files = fs.readdirSync(folderPath);
 
 const dataArray = [];
