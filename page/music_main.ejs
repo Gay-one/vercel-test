@@ -39,11 +39,7 @@
     </div>
     <% let music_list_json = JSON.stringify(array); %>
     <script>
-    let Kuy = '<%= music_list_json %>'
-    const OFUCK = Kuy.replace(/&#34;/g, String.fromCharCode(34))
-    let music_list = JSON.parse(OFUCK)
-    if(music_list=='undefined'){
-        music_list = [{
+    let music_list = [{
         name:"Cheri Cheri Lady",
         band:"Modern Talking",
         release:"1985-09-02"
@@ -52,7 +48,6 @@
         band:"YAI",
         release:"2024-01-01"
     }]
-    }
 let index = Math.floor(Math.random() * music_list.length)
 const song = document.createElement('audio')
 const source = document.createElement('source')
