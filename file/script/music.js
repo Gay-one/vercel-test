@@ -32,12 +32,21 @@ let Sband = document.getElementById('band')
 let Srelease = document.getElementById('release')
 let Simg = document.getElementById('img-song')
 
+let st_1 = document.getElementById('st-1')
+let st_2 = document.getElementById('st-2')
+let st_3 = document.getElementById('st-3')
+let st_4 = document.getElementById('st-4')
+let st_5 = document.getElementById('st-5')
+let st_6 = document.getElementById('st-6')
+let st_7 = document.getElementById('st-7')
+let logo = document.getElementById('logo')
 const Home = document.getElementById('Home')
 const Add_Music = document.getElementById('Add-music')
 const Search_Music = document.getElementById('Search')
 const Me = document.getElementById('Me')
 const Box = document.getElementById('BOX')
 
+logo.classList.add('loader')
 ImgDiv.appendChild(song)
 song.appendChild(source)
 song.controls = true
@@ -277,3 +286,36 @@ Me.addEventListener('click', ()=>{
     div.appendChild(h1)
     div.appendChild(p1)
 })
+song.addEventListener('pause', ()=>{
+    st_1.style.animationDelay = '0s'
+    st_2.style.animationDelay = '0s'
+    st_3.style.animationDelay = '0s'
+    st_4.style.animationDelay = '0s'
+    st_5.style.animationDelay = '0s'
+    st_6.style.animationDelay = '0s'
+    st_7.style.animationDelay = '0s'
+    st_1.style.animationIterationCount = '1'
+    st_2.style.animationIterationCount = '1'
+    st_3.style.animationIterationCount = '1'
+    st_4.style.animationIterationCount = '1'
+    st_5.style.animationIterationCount = '1'
+    st_6.style.animationIterationCount = '1'
+    st_7.style.animationIterationCount = '1'
+})
+song.addEventListener('playing', ()=>{
+    st_1.style.animationDelay = '0s'
+    st_2.style.animationDelay = '0.3s'
+    st_3.style.animationDelay = '0.6s'
+    st_4.style.animationDelay = '0.9s'
+    st_5.style.animationDelay = '0.6s'
+    st_6.style.animationDelay = '0.3s'
+    st_7.style.animationDelay = '0s'
+    st_1.style.animationIterationCount = 'infinite'
+    st_2.style.animationIterationCount = 'infinite'
+    st_3.style.animationIterationCount = 'infinite'
+    st_4.style.animationIterationCount = 'infinite'
+    st_5.style.animationIterationCount = 'infinite'
+    st_6.style.animationIterationCount = 'infinite'
+    st_7.style.animationIterationCount = 'infinite'
+})
+

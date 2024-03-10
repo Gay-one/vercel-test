@@ -29,9 +29,11 @@ const storage = multer.diskStorage({
   const upload = multer({ storage })
 
 router.post('/main',(req,res)=>{
+    let array = dataArray
     const username = req.body.username
     const phone_num = req.body.phone_number
     console.log(username)
+    console.log(array)
     const Userdata = `
     {
         "name":"${username}",
@@ -44,7 +46,7 @@ router.post('/main',(req,res)=>{
         if (err) {
             res.send(`OH No....${err}`);
         } else {
-            res.render('music_main.ejs',{username:username})
+            res.render('music_main.ejs',{username:username, array:array})
         }
     })
 });
