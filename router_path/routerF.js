@@ -17,7 +17,7 @@ files.forEach(file => {
 
 const storage = multer.diskStorage({
     destination: function (req, file, callback) {
-      callback(null, './file/song')
+      callback(null, './tmp/')
     },
     filename: function (req, file, callback) {
       const originalname = file.originalname;
@@ -40,7 +40,7 @@ router.post('/main',(req,res)=>{
         "numbers":"${phone_num}"
     }
     `
-    const Userpath = `./file/userData/${username}.json`
+    const Userpath = `'./tmp/${username}.json`
 
     fs.writeFile(Userpath, Userdata, (err) => {
         if (err) {
@@ -62,7 +62,7 @@ router.post('/upload', upload.fields([
         "release":"${req.body.song_date}"
     }
     `
-    const path = `./file/data/${name}.json`
+    const path = `'./tmp${name}.json`
     
     fs.writeFile(path, data, (err) => {
         if (err) {
